@@ -77,7 +77,12 @@ const Contact = () => {
         <div className={styles["space_section"]}></div>
 
         <div className={styles["form_section"]}>
-          <form name="ContactMe" className={styles["form"]} data-netlify="true">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            className={styles["form"]}
+          >
             {/* email label+box */}
             <div className={styles["field"]}>
               <label htmlFor="email">email</label>
