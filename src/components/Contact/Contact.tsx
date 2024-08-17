@@ -77,17 +77,22 @@ const Contact = () => {
         <div className={styles["space_section"]}></div>
 
         <div className={styles["form_section"]}>
-          <form action="" className={styles["form"]}>
+          <form action="" className={styles["form"]} data-netlify="true">
             {/* email label+box */}
             <div className={styles["field"]}>
               <label htmlFor="email">email</label>
-              <textarea name="" id="" rows={1}></textarea>
+              <textarea name="email" id="email" rows={1} required></textarea>
             </div>
 
             {/* message label+box */}
             <div className={styles["field"]}>
               <label htmlFor="message">message</label>
-              <textarea name="" id="" rows={5}></textarea>
+              <textarea
+                name="message"
+                id="message"
+                rows={5}
+                required
+              ></textarea>
             </div>
 
             {/* send button */}
